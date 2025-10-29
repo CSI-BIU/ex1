@@ -35,15 +35,15 @@ int main()
     // Even - Odd
     printf("\nEven - Odd:\n");
     /* Scan 3 Integers.
-    If at least two of them are even - print 1.
-    If at least two of them are odd - print 0. */
+    If at least two of them are even - print 0.
+    If at least two of them are odd - print 1. */
 
-    // 3, 5, 7, 11
-    printf("\nFloating point:\n");
-    /*  Scan a number - assume it will be a fraction [like 1.7343 or something else, can be negative].
-        Print its sign bit.
-        Print its exponent part in Hexadecimal format.
-        Print its first 3 mantida bits. */
+    // Different Bases
+    printf("\nDifferent Bases:\n");
+    /*  Scan two numbers:
+        One in octal base, one in Hexadecimal base.
+        Print their LSB’s.
+        Print their MSB’s. */
 
     printf("Bye!\n");
 
