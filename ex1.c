@@ -5,7 +5,7 @@ Assignment:
 *******************/
 #include <stdio.h>
 
-// REMIDER : YOU CANT USE ANY CONTROL FLOW OPERATIONS OR FUNCTIONS, ONLY BITWISE.
+// REMIDER : YOU CANT USE ANY CONTROL FLOW OPERATIONS OR FUNCTIONS, ONLY BITWISE. not even "==, &&, ||, !="
 
 int main()
 {
@@ -20,13 +20,13 @@ int main()
         print “1” if its integer representation is odd. */
 
     // 2's complement and other representations
-    printf("\n2’s complement to other representations:\n");
+    printf("\n2’s Complement to Other Representations:\n");
     /*. Scan a negative integer. [2’s complement].
         Print its value in 1’s complement.
         Print its value as unsigned. */
 
     // Shifting right and left
-    printf("\nShifting right and left:\n");
+    printf("\nShifting Right and Left:\n");
     /*. Scan 3 integers.
         The first one - the value you will play with.
         The second and the third - how much to shift right and left, respectively.
