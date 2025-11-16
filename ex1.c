@@ -16,7 +16,7 @@ int main()
     const int lsb1=1;                            
     printf("Please enter a character\n");
     scanf(" %c",&userChar);
-    printf("Its numerical value is %d\n",userChar);
+    printf("Its numerical value is: %d\n",userChar);
 
        //checking if lsb is 1 (odd) or 0 (even)  
     int lsbCheck= userChar&lsb1;                    
@@ -26,26 +26,26 @@ int main()
     // 2's complement and other representations
 
     // getting a negative number  (in 2nd comp) and printing it 1st comp value+ unsigned value
-    printf("\n2's Complement to Other Representations:\n");
+    printf("\n2's complement to other representations:\n");
     int secondComp;
     printf("Please enter a negative integer\n");
     scanf("%d", &secondComp);
 
     // Convert 2's complement to 1's complement
-    int firstComp= - (~secondComp);           
+    unsigned int firstComp= -(~secondComp);           
     printf("1's complement: %d\n", firstComp); 
 
     // Print as unsigned interpretation 
-    printf("unsigned %u\n",firstComp);     
+    printf("unsigned: %u\n",firstComp);     
 
 
 
     // Shifting right and left
-    printf("\nShifting Right and Left:\n");
+    printf("\nShifting right and left:\n");
 
     int mainNum, rightSteps, leftSteps;
 
-    printf("Please enter 3 integers ");
+    printf("Please enter 3 integers\n");
     scanf("%d %d %d", &mainNum, &rightSteps, &leftSteps);
 
     mainNum = mainNum >> rightSteps;  
@@ -57,7 +57,7 @@ int main()
     //Getting 3 numbers from the user. checking if most of them are even/odd
     printf("\nEven - Odd:\n");
     int num1,num2,num3;
-    printf("please enter 3 integers ");
+    printf("please enter 3 integers\n");
     scanf("%d %d %d",&num1,&num2,&num3);
     int lsbnum1 = num1 & 1;  
     int lsbnum2 = num2 & 1;  
@@ -72,7 +72,7 @@ int main()
     printf("\nDifferent Bases:\n");
     int bitsToShift = 31;
     unsigned int octal,hexa;
-    printf("Please enter two numbers in octal and hexadecimal bases ");
+    printf("Please enter two numbers in octal and hexadecimal bases\n");
      scanf("%o %x",&octal,&hexa);
      //getting the lsb's 
     unsigned int lsbOct = octal &1;
@@ -82,8 +82,8 @@ int main()
     unsigned int mask= 1u << bitsToShift;
     unsigned int msbOct = (octal & mask) >> bitsToShift;  
     unsigned int msbHexa = (hexa & mask) >> bitsToShift;
-    printf("LSBs %u  %u\n",lsbOct,lsbHexa);
-    printf("MSBs %u  %u\n",msbOct,msbHexa);
+    printf("LSBs: %u  %u\n",lsbOct,lsbHexa);
+    printf("MSBs: %u  %u\n",msbOct,msbHexa);
 
     printf("Bye!\n");
 

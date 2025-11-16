@@ -1,0 +1,9 @@
+# Ignore zip archives
+*.zip
+
+# Ignore Windows executables
+*.exe
+*.EXE
+
+# Ignore VS Code settings folder
+.vscode/
